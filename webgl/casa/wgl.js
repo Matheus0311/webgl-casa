@@ -44,9 +44,9 @@ function loadGeometry() {
   var gl = appContext.gl;
 
   var vertex = [
-    // Teto (triângulo equilátero)
+    // Teto (triângulo)
     0.0, 0.5, 0.0,
-    -0.5, -0.1667, 0.0, // -1/3 da altura do teto
+    -0.5, -0.1667, 0.0, 
     0.5, -0.1667, 0.0,
 
     // Parede (retângulo)
@@ -196,7 +196,7 @@ function initWebGL(canvas) {
   }
 
   if (!gl) {
-    alert('Imposible inicializar WebGL. Tu navegador puede no soportarlo.');
+    alert('Impossível inicializar WebGL. Seu navegador pode não suportar o WebGL.');
     gl = null;
   } else {
     gl.clearColor(0.53, 0.81, 0.92, 1.0); // Cor do céu
